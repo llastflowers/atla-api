@@ -5,11 +5,7 @@ import {
   Switch,
   Link
 } from 'react-router-dom';
-// import Character from './Character';
-
-const Home = () => (
-  <h1>Home</h1>
-);
+import Characters from './Characters';
 
 const Header = () => (
   <header>
@@ -25,7 +21,7 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Characters} />
         <Route path="/character/:name" />
       </Switch>
     </Router>
